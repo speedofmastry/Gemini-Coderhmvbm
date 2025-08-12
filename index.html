@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up • SPED OF MASTERY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="brand-title">
+        <div class="brand">
+          <!-- Logo badge with brain polygon, styled to match provided logo -->
+          <svg class="logo" viewBox="0 0 240 240" role="img" aria-label="SPED OF MASTERY logo">
+            <!-- outer badge -->
+            <circle cx="120" cy="120" r="116" class="badge-ring" />
+            <circle cx="120" cy="120" r="92" class="badge-inner" />
+            <!-- brain polygonal shape -->
+            <g class="brain" transform="translate(48,65)">
+              <path d="M32 96 L16 80 L12 60 L22 44 L40 34 L58 30 L76 34 L92 46 L102 66 L98 84 L82 100 Z" class="brain-facet" />
+              <path d="M82 100 L98 84 L116 82 L128 90 L132 108 L126 124 L110 134 L92 134 L80 126 Z" class="brain-facet" />
+              <path d="M40 34 L58 30 L70 18 L84 14 L98 20 L108 34 L100 46 L92 46 L76 34 Z" class="brain-facet" />
+              <path d="M12 60 L22 44 L16 34 L24 22 L38 18 L52 22 L58 30 L40 34 L22 44 Z" class="brain-facet" />
+              <path d="M22 96 L10 88 L4 72 L6 58 L12 60 L16 80 L32 96 L48 104 L46 116 L34 114 Z" class="brain-facet" />
+              <path d="M46 116 L48 104 L62 100 L78 100 L82 112 L80 126 L68 130 L54 126 Z" class="brain-facet" />
+            </g>
+          </svg>
+
+          <h1 id="brand-title" class="brand-title" data-en="SPED OF MASTERY" data-ar="سرعة الإتقان">SPED OF MASTERY</h1>
+
+          <div class="lang-toggle">
+            <label class="switch">
+              <input id="langToggle" type="checkbox" aria-label="Toggle language to Arabic" />
+              <span class="slider"></span>
+            </label>
+            <span class="lang-label"><span data-i18n="lang_en">EN</span> / <span data-i18n="lang_ar">AR</span></span>
+          </div>
+        </div>
+
+        <form class="form" novalidate>
+          <div class="grid">
+            <label class="field">
+              <span class="label" data-i18n="full_name_label">Full name</span>
+              <input type="text" name="fullName" placeholder="John Doe" autocomplete="name" />
+            </label>
+
+            <label class="field">
+              <span class="label" data-i18n="national_id_label">National ID number</span>
+              <input type="text" name="nationalId" inputmode="numeric" placeholder="1234567890" />
+            </label>
+
+            <label class="field">
+              <span class="label" data-i18n="phone_label">Phone number</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+1 555 123 4567" />
+            </label>
+
+            <label class="field">
+              <span class="label" data-i18n="email_label">Email address</span>
+              <input type="email" name="email" autocomplete="email" placeholder="name@example.com" />
+            </label>
+
+            <label class="field">
+              <span class="label" data-i18n="dob_label">Date of birth</span>
+              <input type="date" name="dob" />
+            </label>
+
+            <label class="field">
+              <span class="label" data-i18n="city_label">City</span>
+              <input type="text" name="city" placeholder="Riyadh" autocomplete="address-level2" />
+            </label>
+
+            <label class="field full">
+              <span class="label" data-i18n="password_label">Password</span>
+              <input type="password" name="password" placeholder="••••••••" autocomplete="new-password" />
+            </label>
+          </div>
+
+          <button type="submit" class="button" data-i18n="submit">Create account</button>
+        </form>
+
+        <p class="fineprint" data-i18n="fineprint">By continuing, you agree to our Terms and Privacy Policy.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
